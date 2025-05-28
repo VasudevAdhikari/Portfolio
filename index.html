@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moe Thiha (Vasudev Adhikari) Portfolio</title>
+    <!-- Poppins Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Dynamic Background -->
+    <div class="dynamic-bg"></div>
+    <!-- Animated Bubbles -->
+    <div class="bubbles-bg"></div>
+    <!-- Page Loader -->
+    <div id="loader">
+        <div class="loader-content">
+            <i class="fas fa-spinner fa-spin"></i>
+            <span>Loading Portfolio...</span>
+        </div>
+    </div>
+    <!-- Dark/Light Mode Toggle -->
+    <button id="theme-toggle" aria-label="Toggle dark/light mode">
+        <i class="fas fa-moon"></i>
+    </button>
+    <!-- Main Content -->
+    <main>
+        <!-- Header / Hero Section -->
+        <section class="hero animate-pop">
+            <div class="hero-content">
+                <div class="hero-images">
+                    <div class="profile-img-flip" id="profile-img-flip">
+                        <img src="images/moethiha1.jpg" alt="Moe Thiha Photo 1" class="profile-img img-1 active"
+                            data-index="0">
+                        <img src="images/moethiha2.jpg" alt="Moe Thiha Photo 2" class="profile-img img-2"
+                            data-index="1">
+                    </div>
+                </div>
+                <div class="hero-text">
+                    <h1 class="animated-text">Moe Thiha <span>(Vasudev Adhikari)</span></h1>
+                    <p class="subtitle">B.Sc. (Knowledge Engineering) Student | Web Developer | Video Editor | Educator
+                    </p>
+                    <div class="contact-info">
+                        <a href="tel:+959989377380"><i class="fas fa-phone"></i> +959989377380</a>
+                        <a href="tel:+959258388001"><i class="fas fa-phone"></i> +959258388001</a>
+                        <a href="mailto:artsvasudev@gmail.com"><i class="fas fa-envelope"></i> artsvasudev@gmail.com</a>
+                        <a href="mailto:vasudevadhikari@ucsy.edu.mm"><i class="fas fa-envelope"></i>
+                            vasudevadhikari@ucsy.edu.mm</a>
+                    </div>
+                    <div class="personal-info">
+                        <span><i class="fas fa-map-marker-alt"></i> Pyin Oo Lwin, Myanmar</span>
+                        <span><i class="fas fa-user"></i> Male</span>
+                        <span><i class="fas fa-birthday-cake"></i> 7 June 2005 (Age 19)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Skills Section -->
+        <section class="skills-section animate-fadein">
+            <h2><i class="fas fa-tools"></i> Skills & Languages</h2>
+            <div class="skills-lists">
+                <div>
+                    <h3><i class="fas fa-laptop-code"></i> Tech Skills</h3>
+                    <ul>
+                        <li><i class="fab fa-html5"></i> HTML, CSS, JavaScript (Frontend, Intermediate)</li>
+                        <li><i class="fab fa-java"></i> JavaEE (Backend, Intermediate)</li>
+                        <li><i class="fab fa-python"></i> Django (Intermediate), Python (Advanced)</li>
+                        <li><i class="fas fa-database"></i> SQL (Upper Intermediate)</li>
+                        <li><i class="fas fa-code"></i> C++ (Intermediate), Core Java (Intermediate)</li>
+                        <li><i class="fas fa-video"></i> Video Editing</li>
+                        <li><i class="fas fa-brain"></i> CS50's Artificial Intelligence (Learning)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3><i class="fas fa-user-graduate"></i> Soft Skills</h3>
+                    <ul>
+                        <li><i class="fas fa-chalkboard-teacher"></i> Teaching</li>
+                        <li><i class="fas fa-lightbulb"></i> Logical & Critical Thinking</li>
+                        <li><i class="fas fa-paint-brush"></i> Web Design</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3><i class="fas fa-language"></i> Languages</h3>
+                    <ul>
+                        <li><i class="fas fa-comment"></i> Burmese (Fluent)</li>
+                        <li><i class="fas fa-comment"></i> English (Fluent)</li>
+                        <li><i class="fas fa-comment"></i> Nepali (Fluent)</li>
+                        <li><i class="fas fa-comment"></i> Hindi (Fluent)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Projects Section -->
+        <section class="projects-section animate-slidein">
+            <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+            <div class="projects-list">
+                <div class="project-card">
+                    <h3>University Management System</h3>
+                    <span class="project-date">Ongoing (Complete by Sep 2025)</span>
+                    <p>Complete Web Based Academic System for a Semester-based University.</p>
+                    <a href="#" class="project-link"><i class="fas fa-link"></i> View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Own Chatbot using Django & Gemini API</h3>
+                    <span class="project-date">Dec 2024</span>
+                    <p>Developed a custom chatbot using Django and Gemini API.</p>
+                    <a href="#" class="project-link"><i class="fas fa-link"></i> View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>E-commerce Website for Panmyodaw Yogurt</h3>
+                    <span class="project-date">Sep 2024</span>
+                    <p>Developed a full-featured e-commerce website for a Yogurt Company.</p>
+                    <a href="#" class="project-link"><i class="fas fa-link"></i> View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Shopping Mall Finances Database Project</h3>
+                    <span class="project-date">Mar 2024</span>
+                    <p>Designed and implemented a database for shopping mall finances.</p>
+                    <a href="#" class="project-link"><i class="fas fa-link"></i> View Project</a>
+                </div>
+            </div>
+        </section>
+        <!-- Work Experience Section -->
+        <section class="experience-section animate-fadein">
+            <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+            <div class="experience-list">
+                <div class="exp-card">
+                    <h3>Coordinator, CST Academy</h3>
+                    <span class="exp-date">May 2025 - Present</span>
+                    <p>Guiding, sharing, and teaching IT students as the coordinator of CST Academy, a main branch of
+                        CST Community.</p>
+                    <a href="#" class="exp-link"><i class="fas fa-link"></i> View Details</a>
+                </div>
+                <div class="exp-card">
+                    <h3>Fundraiser for Sagaing Earthquake Recovery</h3>
+                    <span class="exp-date">Apr 2025</span>
+                    <p>Launched "C++ Basic to Intermediate" and "Python for Data Science" courses to raise funds.</p>
+                    <a href="#" class="exp-link"><i class="fas fa-link"></i> View Details</a>
+                </div>
+                <div class="exp-card">
+                    <h3>Member, CST Community (UCSY)</h3>
+                    <span class="exp-date">Jan 2025 - Present</span>
+                    <p>Joined the Computer Science and Technology community to guide and support IT students.</p>
+                    <a href="#" class="exp-link"><i class="fas fa-link"></i> View Details</a>
+                </div>
+                <div class="exp-card">
+                    <h3>Launched "Basic to Advanced OOP with Java"</h3>
+                    <span class="exp-date">Oct 2024</span>
+                    <p>Published a comprehensive Java OOP course through MM Logic Gallery.</p>
+                    <a href="#" class="exp-link"><i class="fas fa-link"></i> View Course</a>
+                </div>
+                <div class="exp-card">
+                    <h3>MM Logic Gallery (YouTube Channel)</h3>
+                    <span class="exp-date">Oct 2023 - Present</span>
+                    <p>Founder and content creator. Teach programming and computer science topics, handle all aspects
+                        from content to marketing.</p>
+                    <a href="#mm-logic-gallery" class="exp-link"><i class="fas fa-link"></i> Visit Section</a>
+                </div>
+                <div class="exp-card">
+                    <h3>UCSY Documentary Video</h3>
+                    <span class="exp-date">Aug 2023</span>
+                    <p>Script writer, director, and video editor for a documentary video for UCSY.</p>
+                    <a href="#ucsy-doc-video" class="exp-link"><i class="fas fa-link"></i> Watch Video</a>
+                </div>
+                <div class="exp-card">
+                    <h3>Volunteer Nepali Teacher</h3>
+                    <span class="exp-date">Summer 2023</span>
+                    <p>Taught Nepali language and literature to village students.</p>
+                    <a href="#" class="exp-link"><i class="fas fa-link"></i> View Details</a>
+                </div>
+            </div>
+        </section>
+        <!-- MM Logic Gallery Section -->
+        <section id="mm-logic-gallery" class="mm-logic-gallery-section animate-pop">
+            <h2><i class="fab fa-youtube"></i> MM Logic Gallery</h2>
+            <div class="gallery-videos">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tUs7By9xln4?si=a8AQJ0UMDJ09UA2k"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6xLEpeyteCY?si=FwCPVIhDcroYCuw4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LklxvzUN6A0?si=Gjst8ijVzKhlDdZ-"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <a href="https://www.youtube.com/@mmlogicgallery" target="_blank" class="yt-link"><i
+                    class="fab fa-youtube"></i> Visit MM Logic Gallery</a>
+        </section>
+        <!-- UCSY Documentary Video Section -->
+        <section id="ucsy-doc-video" class="ucsy-doc-section animate-fadein">
+            <h2><i class="fas fa-film"></i> UCSY Documentary Video</h2>
+            <div class="doc-video-placeholder">
+                <iframe src="https://www.youtube.com/embed/PLACEHOLDER" title="UCSY Documentary"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+        <!-- Education Section -->
+        <section class="education-section animate-slidein">
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <ul class="education-list">
+                <li>
+                    <span class="edu-date">2022 - Present</span>
+                    <span class="edu-detail">Bachelor of Science (Knowledge Engineering), University of Computer Studies
+                        Yangon (UCSY)</span>
+                </li>
+                <li>
+                    <span class="edu-date">2022</span>
+                    <span class="edu-detail">Matriculation Exam Pass, Pyin Oo Lwin</span>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <span>&copy; 2024 Moe Thiha (Vasudev Adhikari). All rights reserved.</span>
+    </footer>
+    <!-- Lightbox Modal for Profile Images -->
+    <div id="lightbox-modal" class="lightbox-modal">
+        <span class="lightbox-close" id="lightbox-close">&times;</span>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="Profile Image">
+        <button class="lightbox-nav lightbox-prev" id="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-nav lightbox-next" id="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <div id="volunteering-lightbox" class="lightbox-modal">
+        <span class="lightbox-close" id="volunteering-lightbox-close">×</span>
+        <div class="lightbox-content">
+            <h3>Volunteer Nepali Teacher - Summer 2023</h3>
+            <p>During the summer of 2023, I dedicated two months to a deeply rewarding volunteering experience in a
+                Nepali school in Pyin Oo Lwin. I had the privilege of teaching Nepali language and literature to
+                approximately 50 enthusiastic students in what was essentially a summer school program.</p>
+            <p>The curriculum focused on engaging the students with the rich tapestry of Nepali literature, exploring
+                stories, poems, and cultural nuances. It was inspiring to witness their eagerness to learn and their
+                progress over the two months. We also conducted examinations to assess their understanding and provide
+                constructive feedback.</p>
+            <p>Beyond the academics, this experience provided invaluable cultural exchange and a deeper understanding of
+                the local community. The dedication of the students and the warmth of the people made this volunteering
+                journey truly unforgettable.</p>
+
+            <div class="image-slider-container">
+                <div class="image-slider">
+                    <img src="https://placehold.co/800x450/ADD8E6/000000?text=Volunteering+1"
+                        alt="Volunteering Image 1">
+                    <img src="https://placehold.co/800x450/B0E0E6/000000?text=Volunteering+2"
+                        alt="Volunteering Image 2">
+                    <img src="https://placehold.co/800x450/87CEEB/000000?text=Volunteering+3"
+                        alt="Volunteering Image 3">
+                    <img src="https://placehold.co/800x450/6A5ACD/FFFFFF?text=Volunteering+4"
+                        alt="Volunteering Image 4">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- External JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
