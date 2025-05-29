@@ -149,8 +149,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const openVolunteeringLightboxBtn = document.getElementById('open-volunteering-lightbox');
     const volunteeringLightbox = document.getElementById('volunteering-lightbox');
     const volunteeringLightboxClose = document.getElementById('volunteering-lightbox-close');
-    const slider = volunteeringLightbox.querySelector('.image-slider');
-    const images = slider.querySelectorAll('img');
+    const slider = volunteeringLightbox ? volunteeringLightbox.querySelector('.image-slider') : null;
+    const images = slider ? slider.querySelectorAll('img') : [];
 
     let currentSlide = 0;
     let sliderInterval; // Variable to hold the interval ID
@@ -191,17 +191,23 @@ document.addEventListener('DOMContentLoaded', function() {
     if (openVolunteeringLightboxBtn) {
         openVolunteeringLightboxBtn.addEventListener('click', function(event) {
             event.preventDefault(); // Prevent the default link behavior
-            volunteeringLightbox.style.display = 'block'; // Show the lightbox
-            showSlide(0); // Start with the first slide
-            startSlider(); // Start the automatic slider
+            if (volunteeringLightbox) {
+                volunteeringLightbox.style.display = 'block'; // Show the lightbox
+                if (images.length > 0) {
+                    showSlide(0); // Start with the first slide
+                    startSlider(); // Start the automatic slider
+                }
+            }
         });
     }
 
     // Event listener to close the lightbox when the close button is clicked
     if (volunteeringLightboxClose) {
         volunteeringLightboxClose.addEventListener('click', function() {
-            volunteeringLightbox.style.display = 'none'; // Hide the lightbox
-            stopSlider(); // Stop the automatic slider
+            if (volunteeringLightbox) {
+                volunteeringLightbox.style.display = 'none'; // Hide the lightbox
+                stopSlider(); // Stop the automatic slider
+            }
         });
     }
 
@@ -214,4 +220,130 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // --- UMS Project Lightbox Functionality ---
+
+    // Get references to the UMS lightbox elements
+    const openUmsLightboxBtn = document.getElementById('open-ums-lightbox');
+    const umsLightbox = document.getElementById('ums-lightbox');
+    const umsLightboxClose = document.getElementById('ums-lightbox-close');
+
+    // Event listener to open the UMS lightbox when "View Details" is clicked
+    if (openUmsLightboxBtn) {
+        openUmsLightboxBtn.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default link behavior
+            if (umsLightbox) {
+                umsLightbox.style.display = 'block'; // Show the lightbox
+            }
+        });
+    }
+
+    // Event listener to close the UMS lightbox when the close button is clicked
+    if (umsLightboxClose) {
+        umsLightboxClose.addEventListener('click', function() {
+            if (umsLightbox) {
+                umsLightbox.style.display = 'none'; // Hide the lightbox
+            }
+        });
+    }
+
+    // Event listener to close the UMS lightbox when clicking outside the content
+    if (umsLightbox) {
+        umsLightbox.addEventListener('click', function(event) {
+            if (event.target === umsLightbox) { // Check if the click was on the overlay itself
+                umsLightbox.style.display = 'none'; // Hide the lightbox
+            }
+        });
+    }
+
+    // Close UMS lightbox with Escape key
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape' && umsLightbox && umsLightbox.style.display === 'block') {
+            umsLightbox.style.display = 'none';
+        }
+    });
+
+    // --- CST Community Lightbox Functionality ---
+
+    // Get references to the CST lightbox elements
+    const openCstLightboxBtn = document.getElementById('open-cst-lightbox');
+    const cstLightbox = document.getElementById('cst-lightbox');
+    const cstLightboxClose = document.getElementById('cst-lightbox-close');
+
+    // Event listener to open the CST lightbox when "View Details" is clicked
+    if (openCstLightboxBtn) {
+        openCstLightboxBtn.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default link behavior
+            if (cstLightbox) {
+                cstLightbox.style.display = 'block'; // Show the lightbox
+            }
+        });
+    }
+
+    // Event listener to close the CST lightbox when the close button is clicked
+    if (cstLightboxClose) {
+        cstLightboxClose.addEventListener('click', function() {
+            if (cstLightbox) {
+                cstLightbox.style.display = 'none'; // Hide the lightbox
+            }
+        });
+    }
+
+    // Event listener to close the CST lightbox when clicking outside the content
+    if (cstLightbox) {
+        cstLightbox.addEventListener('click', function(event) {
+            if (event.target === cstLightbox) { // Check if the click was on the overlay itself
+                cstLightbox.style.display = 'none'; // Hide the lightbox
+            }
+        });
+    }
+
+    // Close CST lightbox with Escape key
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape' && cstLightbox && cstLightbox.style.display === 'block') {
+            cstLightbox.style.display = 'none';
+        }
+    });
+
+    // --- Java Course Lightbox Functionality ---
+
+    // Get references to the Java lightbox elements
+    const openJavaLightboxBtn = document.getElementById('open-java-lightbox');
+    const javaLightbox = document.getElementById('java-lightbox');
+    const javaLightboxClose = document.getElementById('java-lightbox-close');
+
+    // Event listener to open the Java lightbox when "View Course" is clicked
+    if (openJavaLightboxBtn) {
+        openJavaLightboxBtn.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default link behavior
+            if (javaLightbox) {
+                javaLightbox.style.display = 'block'; // Show the lightbox
+            }
+        });
+    }
+
+    // Event listener to close the Java lightbox when the close button is clicked
+    if (javaLightboxClose) {
+        javaLightboxClose.addEventListener('click', function() {
+            if (javaLightbox) {
+                javaLightbox.style.display = 'none'; // Hide the lightbox
+            }
+        });
+    }
+
+    // Event listener to close the Java lightbox when clicking outside the content
+    if (javaLightbox) {
+        javaLightbox.addEventListener('click', function(event) {
+            if (event.target === javaLightbox) { // Check if the click was on the overlay itself
+                javaLightbox.style.display = 'none'; // Hide the lightbox
+            }
+        });
+    }
+
+    // Close Java lightbox with Escape key
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape' && javaLightbox && javaLightbox.style.display === 'block') {
+            javaLightbox.style.display = 'none';
+        }
+    });
 });
