@@ -1,4 +1,4 @@
-# 👋 Welcome to My Corner of the Internet!
+# 👋 MYSELF, THE LIFELONG LEARNER
 &nbsp;
 &nbsp;
 
