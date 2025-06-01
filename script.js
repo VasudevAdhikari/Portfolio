@@ -346,4 +346,46 @@ document.addEventListener('DOMContentLoaded', function() {
             javaLightbox.style.display = 'none';
         }
     });
+
+    // --- Earthquake Fundraiser Lightbox Functionality ---
+
+    // Get references to the Earthquake lightbox elements
+    const openEarthquakeLightboxBtn = document.getElementById('open-earthquake-lightbox');
+    const earthquakeLightbox = document.getElementById('earthquake-lightbox');
+    const earthquakeLightboxClose = document.getElementById('earthquake-lightbox-close');
+
+    // Event listener to open the Earthquake lightbox when "View Details" is clicked
+    if (openEarthquakeLightboxBtn) {
+        openEarthquakeLightboxBtn.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default link behavior
+            if (earthquakeLightbox) {
+                earthquakeLightbox.style.display = 'block'; // Show the lightbox
+            }
+        });
+    }
+
+    // Event listener to close the Earthquake lightbox when the close button is clicked
+    if (earthquakeLightboxClose) {
+        earthquakeLightboxClose.addEventListener('click', function() {
+            if (earthquakeLightbox) {
+                earthquakeLightbox.style.display = 'none'; // Hide the lightbox
+            }
+        });
+    }
+
+    // Event listener to close the Earthquake lightbox when clicking outside the content
+    if (earthquakeLightbox) {
+        earthquakeLightbox.addEventListener('click', function(event) {
+            if (event.target === earthquakeLightbox) { // Check if the click was on the overlay itself
+                earthquakeLightbox.style.display = 'none'; // Hide the lightbox
+            }
+        });
+    }
+
+    // Close Earthquake lightbox with Escape key
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape' && earthquakeLightbox && earthquakeLightbox.style.display === 'block') {
+            earthquakeLightbox.style.display = 'none';
+        }
+    });
 });

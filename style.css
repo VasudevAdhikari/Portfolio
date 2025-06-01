@@ -2087,3 +2087,454 @@ footer {
         right: 15px;
     }
 }
+
+/* Earthquake Fundraiser Lightbox Styles */
+#earthquake-lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 1001;
+    overflow-y: auto;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+#earthquake-lightbox .lightbox-close {
+    color: #fff;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 1002;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+#earthquake-lightbox .lightbox-close:hover {
+    color: var(--accent);
+    transform: scale(1.1);
+}
+
+.earthquake-content {
+    position: relative;
+    background: linear-gradient(135deg, var(--card-bg-light) 0%, #fef7f0 100%);
+    margin: 30px auto;
+    padding: 0;
+    border: none;
+    width: 95%;
+    max-width: 1000px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: slideInUp 0.4s ease-out;
+    overflow: hidden;
+}
+
+[data-theme="dark"] .earthquake-content {
+    background: linear-gradient(135deg, var(--card-bg-dark) 0%, #2d1f1f 100%);
+    color: var(--text-dark);
+}
+
+/* Earthquake Header */
+.earthquake-header {
+    background: linear-gradient(135deg, #e53e3e 0%, #fc8181 100%);
+    padding: 30px;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.earthquake-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    animation: shimmer 3s ease-in-out infinite;
+}
+
+.earthquake-header h2 {
+    margin: 0 0 15px 0;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 1;
+}
+
+.earthquake-status {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+/* Content Sections */
+.earthquake-story, .earthquake-mission, .earthquake-courses, .earthquake-impact, .earthquake-privacy, .earthquake-message {
+    padding: 30px;
+    border-bottom: 1px solid rgba(229,62,62,0.1);
+}
+
+.earthquake-message {
+    border-bottom: none;
+}
+
+.earthquake-content h3 {
+    color: #e53e3e;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+[data-theme="dark"] .earthquake-content h3 {
+    color: #fc8181;
+}
+
+.earthquake-story p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-light);
+    margin: 0;
+}
+
+[data-theme="dark"] .earthquake-story p {
+    color: var(--text-dark);
+}
+
+/* Mission Card */
+.mission-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(135deg, #fff 0%, #fef7f0 100%);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(229,62,62,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #e53e3e;
+    margin-top: 20px;
+}
+
+[data-theme="dark"] .mission-card {
+    background: linear-gradient(135deg, var(--card-bg-dark) 0%, #2d1f1f 100%);
+    color: var(--text-dark);
+    border-left-color: #fc8181;
+}
+
+.mission-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(229,62,62,0.2);
+}
+
+.mission-icon {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+}
+
+.mission-text h4 {
+    margin: 0 0 8px 0;
+    color: #e53e3e;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+[data-theme="dark"] .mission-text h4 {
+    color: #fc8181;
+}
+
+.mission-text p {
+    margin: 0;
+    color: var(--text-light);
+    line-height: 1.5;
+}
+
+[data-theme="dark"] .mission-text p {
+    color: var(--text-dark);
+}
+
+/* Course Sections */
+.course-section {
+    background: linear-gradient(135deg, #fff 0%, #fef7f0 100%);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(229,62,62,0.1);
+    border: 2px solid transparent;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+[data-theme="dark"] .course-section {
+    background: linear-gradient(135deg, var(--card-bg-dark) 0%, #2d1f1f 100%);
+    color: var(--text-dark);
+}
+
+.course-section:hover {
+    transform: translateY(-3px);
+    border-color: #e53e3e;
+}
+
+.course-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(229,62,62,0.1);
+}
+
+.course-icon {
+    font-size: 2rem;
+    background: linear-gradient(135deg, #e53e3e 0%, #fc8181 100%);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(229,62,62,0.3);
+}
+
+.course-header h4 {
+    margin: 0;
+    color: #e53e3e;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+[data-theme="dark"] .course-header h4 {
+    color: #fc8181;
+}
+
+/* Course Topics */
+.course-topics {
+    display: grid;
+    gap: 12px;
+}
+
+.topic-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: rgba(229,62,62,0.05);
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 3px solid #e53e3e;
+    transition: background 0.3s ease;
+}
+
+[data-theme="dark"] .topic-item {
+    background: rgba(229,62,62,0.1);
+    border-left-color: #fc8181;
+}
+
+.topic-item:hover {
+    background: rgba(229,62,62,0.1);
+}
+
+[data-theme="dark"] .topic-item:hover {
+    background: rgba(229,62,62,0.15);
+}
+
+.topic-icon {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.topic-item span:last-child {
+    font-weight: 500;
+    color: var(--text-light);
+    line-height: 1.4;
+}
+
+[data-theme="dark"] .topic-item span:last-child {
+    color: var(--text-dark);
+}
+
+/* Impact List */
+.impact-list {
+    display: grid;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.impact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: rgba(72,187,120,0.05);
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 4px solid #48bb78;
+    transition: background 0.3s ease;
+}
+
+[data-theme="dark"] .impact-item {
+    background: rgba(72,187,120,0.1);
+}
+
+.impact-item:hover {
+    background: rgba(72,187,120,0.1);
+}
+
+[data-theme="dark"] .impact-item:hover {
+    background: rgba(72,187,120,0.15);
+}
+
+.impact-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.impact-item span:last-child {
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+[data-theme="dark"] .impact-item span:last-child {
+    color: var(--text-dark);
+}
+
+/* Privacy Notice */
+.privacy-notice {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid #f39c12;
+    margin-top: 20px;
+}
+
+[data-theme="dark"] .privacy-notice {
+    background: linear-gradient(135deg, #2d3436 0%, #636e72 100%);
+    border-color: var(--secondary);
+}
+
+.privacy-icon {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+}
+
+.privacy-text h4 {
+    margin: 0 0 10px 0;
+    color: #d68910;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+[data-theme="dark"] .privacy-text h4 {
+    color: var(--secondary);
+}
+
+.privacy-text p {
+    margin: 0;
+    color: #856404;
+    line-height: 1.6;
+}
+
+[data-theme="dark"] .privacy-text p {
+    color: var(--text-dark);
+}
+
+/* Message Notice */
+.message-notice {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%);
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid #4caf50;
+    margin-top: 20px;
+}
+
+[data-theme="dark"] .message-notice {
+    background: linear-gradient(135deg, #2d4a2d 0%, #3e5e3e 100%);
+    border-color: #66bb6a;
+}
+
+.message-icon {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+}
+
+.message-text h4 {
+    margin: 0 0 10px 0;
+    color: #2e7d32;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+[data-theme="dark"] .message-text h4 {
+    color: #66bb6a;
+}
+
+.message-text p {
+    margin: 0;
+    color: #1b5e20;
+    line-height: 1.6;
+}
+
+[data-theme="dark"] .message-text p {
+    color: var(--text-dark);
+}
+
+/* Earthquake Lightbox Responsive Design */
+@media (max-width: 768px) {
+    .earthquake-content {
+        width: 98%;
+        margin: 10px auto;
+        border-radius: 15px;
+    }
+
+    .earthquake-header {
+        padding: 20px;
+    }
+
+    .earthquake-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .earthquake-story, .earthquake-mission, .earthquake-courses, .earthquake-impact, .earthquake-privacy, .earthquake-message {
+        padding: 20px;
+    }
+
+    .earthquake-status {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .mission-card, .privacy-notice, .message-notice {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .course-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    #earthquake-lightbox .lightbox-close {
+        font-size: 30px;
+        top: 10px;
+        right: 15px;
+    }
+}
