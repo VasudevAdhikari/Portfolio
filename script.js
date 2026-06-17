@@ -221,88 +221,102 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // --- UMS Project Lightbox Functionality ---
+    // --- EGILS Lightbox Functionality ---
 
-    // Get references to the UMS lightbox elements
-    const openUmsLightboxBtn = document.getElementById('open-ums-lightbox');
-    const umsLightbox = document.getElementById('ums-lightbox');
-    const umsLightboxClose = document.getElementById('ums-lightbox-close');
+    const openEgilsLightboxBtn = document.getElementById('open-egils-lightbox');
+    const egilsLightbox = document.getElementById('egils-lightbox');
+    const egilsLightboxClose = document.getElementById('egils-lightbox-close');
 
-    // Event listener to open the UMS lightbox when "View Details" is clicked
-    if (openUmsLightboxBtn) {
-        openUmsLightboxBtn.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent the default link behavior
-            if (umsLightbox) {
-                umsLightbox.style.display = 'block'; // Show the lightbox
+    if (openEgilsLightboxBtn) {
+        openEgilsLightboxBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+            if (egilsLightbox) {
+                egilsLightbox.style.display = 'block';
             }
         });
     }
 
-    // Event listener to close the UMS lightbox when the close button is clicked
-    if (umsLightboxClose) {
-        umsLightboxClose.addEventListener('click', function() {
-            if (umsLightbox) {
-                umsLightbox.style.display = 'none'; // Hide the lightbox
+    if (egilsLightboxClose) {
+        egilsLightboxClose.addEventListener('click', function() {
+            if (egilsLightbox) {
+                egilsLightbox.style.display = 'none';
             }
         });
     }
 
-    // Event listener to close the UMS lightbox when clicking outside the content
-    if (umsLightbox) {
-        umsLightbox.addEventListener('click', function(event) {
-            if (event.target === umsLightbox) { // Check if the click was on the overlay itself
-                umsLightbox.style.display = 'none'; // Hide the lightbox
+    if (egilsLightbox) {
+        egilsLightbox.addEventListener('click', function(event) {
+            if (event.target === egilsLightbox) {
+                egilsLightbox.style.display = 'none';
             }
         });
     }
 
-    // Close UMS lightbox with Escape key
     document.addEventListener('keydown', function(event) {
-        if (event.key === 'Escape' && umsLightbox && umsLightbox.style.display === 'block') {
-            umsLightbox.style.display = 'none';
+        if (event.key === 'Escape' && egilsLightbox && egilsLightbox.style.display === 'block') {
+            egilsLightbox.style.display = 'none';
         }
     });
 
-    // --- CST Community Lightbox Functionality ---
+    // --- Manomyr Lightbox Functionality ---
 
-    // Get references to the CST lightbox elements
-    const openCstLightboxBtn = document.getElementById('open-cst-lightbox');
-    const cstLightbox = document.getElementById('cst-lightbox');
-    const cstLightboxClose = document.getElementById('cst-lightbox-close');
+    const openManomyrLightboxBtn = document.getElementById('open-manomyr-lightbox');
+    const manomyrLightbox = document.getElementById('manomyr-lightbox');
+    const manomyrLightboxClose = document.getElementById('manomyr-lightbox-close');
 
-    // Event listener to open the CST lightbox when "View Details" is clicked
-    if (openCstLightboxBtn) {
-        openCstLightboxBtn.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent the default link behavior
-            if (cstLightbox) {
-                cstLightbox.style.display = 'block'; // Show the lightbox
+    if (openManomyrLightboxBtn) {
+        openManomyrLightboxBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+            if (manomyrLightbox) {
+                manomyrLightbox.style.display = 'block';
             }
         });
     }
 
-    // Event listener to close the CST lightbox when the close button is clicked
-    if (cstLightboxClose) {
-        cstLightboxClose.addEventListener('click', function() {
-            if (cstLightbox) {
-                cstLightbox.style.display = 'none'; // Hide the lightbox
+    if (manomyrLightboxClose) {
+        manomyrLightboxClose.addEventListener('click', function() {
+            if (manomyrLightbox) {
+                manomyrLightbox.style.display = 'none';
             }
         });
     }
 
-    // Event listener to close the CST lightbox when clicking outside the content
-    if (cstLightbox) {
-        cstLightbox.addEventListener('click', function(event) {
-            if (event.target === cstLightbox) { // Check if the click was on the overlay itself
-                cstLightbox.style.display = 'none'; // Hide the lightbox
+    if (manomyrLightbox) {
+        manomyrLightbox.addEventListener('click', function(event) {
+            if (event.target === manomyrLightbox) {
+                manomyrLightbox.style.display = 'none';
             }
         });
     }
 
-    // Close CST lightbox with Escape key
     document.addEventListener('keydown', function(event) {
-        if (event.key === 'Escape' && cstLightbox && cstLightbox.style.display === 'block') {
-            cstLightbox.style.display = 'none';
+        if (event.key === 'Escape' && manomyrLightbox && manomyrLightbox.style.display === 'block') {
+            manomyrLightbox.style.display = 'none';
         }
+    });
+
+    // --- Navigation show/hide on scroll ---
+    const topNav = document.getElementById('top-nav');
+    let lastScrollY = window.scrollY;
+    window.addEventListener('scroll', function() {
+        const currentScrollY = window.scrollY;
+        if (currentScrollY > lastScrollY && currentScrollY > 100) {
+            topNav.classList.add('nav-hidden');
+        } else {
+            topNav.classList.remove('nav-hidden');
+        }
+        lastScrollY = currentScrollY;
+    });
+
+    // Smooth anchor scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(event) {
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                event.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
     });
 
     // --- Java Course Lightbox Functionality ---

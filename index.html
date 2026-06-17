@@ -11,10 +11,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/moethiha2.jpg" type="image/jpg">
+    <link rel="icon" href="images/moethiha4.png" type="image/jpg">
 </head>
 
 <body>
+    <nav class="top-nav" id="top-nav">
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+        </ul>
+        <div class="nav-actions" style="display:hidden !important; opacity:0;">
+            <button id="theme-toggle" aria-label="Toggle dark/light mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
     <!-- Dynamic Background -->
     <div class="dynamic-bg"></div>
     <!-- Animated Bubbles -->
@@ -26,28 +40,25 @@
             <span>Loading Portfolio...</span>
         </div>
     </div>
-    <!-- Dark/Light Mode Toggle -->
-    <button id="theme-toggle" aria-label="Toggle dark/light mode">
-        <i class="fas fa-moon"></i>
-    </button>
     <!-- Main Content -->
     <main>
         <!-- Header / Hero Section -->
-        <section class="hero animate-pop">
+        <section class="hero animate-pop" id="home">
             <div class="hero-content">
                 <div class="hero-images">
                     <div class="profile-img-flip" id="profile-img-flip">
-                        <img src="images/moethiha1.jpg" alt="Moe Thiha Photo 1" class="profile-img img-1 active"
-                            data-index="0">
-                        <img src="images/moethiha2.jpg" alt="Moe Thiha Photo 2" class="profile-img img-2"
+                        <img src="images/moethiha4.png" alt="Moe Thiha Photo 1" class="profile-img img-1 active"
                             data-index="1">
+                        <img src="images/moethiha2.jpg" alt="Moe Thiha Photo 2" class="profile-img img-2"
+                            data-index="2">
                         <img src="images/moethiha3.png" alt="Moe Thiha Photo 3" class="profile-img img-3"
                             data-index="3">
                     </div>
                 </div>
                 <div class="hero-text">
                     <h1 class="animated-text">Moe Thiha <span>(Vasudev Adhikari)</span></h1>
-                    <p class="subtitle">B.Sc. (Knowledge Engineering) Student | Web Developer | Video Editor | Educator
+                    <p class="subtitle">B.Sc. (Knowledge Engineering) Student <br>
+                        AI & Software Systems Engineer
                     </p>
                     <div class="contact-info">
                         <a href="tel:+959989377380"><i class="fas fa-phone"></i> +959989377380</a>
@@ -57,37 +68,38 @@
                             moethiha@ucsy.edu.mm</a>
                     </div>
                     <div class="personal-info">
-                        <span><i class="fas fa-map-marker-alt"></i> Pyin Oo Lwin, Myanmar</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Depa Hostel, UCSY, No. (3) Main Road, Shwe Pyi Thar, Yangon</span>
                         <span><i class="fas fa-user"></i> Male</span>
-                        <span><i class="fas fa-birthday-cake"></i> 7 June 2005 (Age 19)</span>
+                        <span><i class="fas fa-birthday-cake"></i> 7 June 2005 (Age 21)</span>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Skills Section -->
         <section class="skills-section animate-fadein">
+            <h2><i class="fas fa-book"></i> Abstract</h2>
+            <p class="skills-abstract">Computer Science student passionate about Artificial Intelligence, Generative AI, and software architecture. Experienced in system design, data modeling, project coordination, and team collaboration through academic and personal projects. Driven by curiosity, continuous improvement, and a commitment to lifelong learning.</p>
+        </section>
+        <section class="skills-section animate-fadein" id="skills">
             <h2><i class="fas fa-tools"></i> Skills & Languages</h2>
             <div class="skills-lists">
                 <div>
-                    <h3><i class="fas fa-laptop-code"></i> Tech Skills</h3>
+                    <h3><i class="fas fa-laptop-code"></i> Technical Skills</h3>
                     <ul>
-                        <li><i class="fab fa-html5"></i> Web Frontend with HTML, CSS, JS (Intermediate)</li>
-                        <li><i class="fab fa-java"></i> Core Java (Intermediate)</li>
-                        <li><i class="fab fa-java"></i> JavaEE Web Backend (Intermediate)</li>
-                        <li><i class="fab fa-python"></i> Python (Advanced)</li>
-                        <li><i class="fab fa-python"></i> Django (Intermediate)</li>
-                        <li><i class="fas fa-database"></i> SQL (Upper Intermediate)</li>
-                        <li><i class="fas fa-code"></i> C++ (Basic)</li>
-                        <li><i class="fas fa-video"></i> Video Editing</li>
-                        <li><i class="fas fa-brain"></i> CS50's Artificial Intelligence (Learning)</li>
+                        <li><i class="fas fa-cubes"></i> Software Architecture and System Design</li>
+                        <li><i class="fas fa-robot"></i> AI and Machine Learning</li>
+                        <li><i class="fas fa-database"></i> Database Design and Data Modeling</li>
+                        <li><i class="fas fa-globe"></i> Full Stack Web Development</li>
                     </ul>
                 </div>
                 <div>
                     <h3><i class="fas fa-user-graduate"></i> Soft Skills</h3>
                     <ul>
-                        <li><i class="fas fa-chalkboard-teacher"></i> Teaching</li>
-                        <li><i class="fas fa-lightbulb"></i> Logical & Critical Thinking</li>
-                        <li><i class="fas fa-paint-brush"></i> Project Management & Teamwork</li>
+                        <li><i class="fas fa-project-diagram"></i> Technical Project Leadership</li>
+                        <li><i class="fas fa-users"></i> Team Coordination</li>
+                        <li><i class="fas fa-lightbulb"></i> Problem Solving</li>
+                        <li><i class="fas fa-search"></i> Micromanagement</li>
+                        <li><i class="fas fa-share-alt"></i> Knowledge Sharing</li>
                     </ul>
                 </div>
                 <div>
@@ -101,15 +113,73 @@
                 </div>
             </div>
         </section>
+        <section class="tools-section animate-fadein">
+            <h2><i class="fas fa-toolbox"></i> Tools & Technology</h2>
+            <div class="tools-lists">
+                <div>
+                    <h3><i class="fas fa-code"></i> Programming Experiences</h3>
+                    <ul>
+                        <li><i class="fab fa-python"></i> Python</li>
+                        <li><i class="fab fa-js"></i> JavaScript</li>
+                        <li><i class="fab fa-java"></i> Java</li>
+                        <li><i class="fas fa-code"></i> C++</li>
+                        <li><i class="fas fa-mobile-alt"></i> Kotlin</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3><i class="fas fa-brain"></i> Artificial Intelligence</h3>
+                    <ul>
+                        <li><i class="fas fa-chart-line"></i> Heuristic & Statistical Methods</li>
+                        <li><i class="fas fa-network-wired"></i> Deep Learning</li>
+                        <li><i class="fas fa-comments"></i> NLP</li>
+                        <li><i class="fas fa-image"></i> CV</li>
+                        <li><i class="fas fa-project-diagram"></i> Multimodal Learning</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3><i class="fas fa-server"></i> Backend Frameworks</h3>
+                    <ul>
+                        <li><i class="fas fa-feather"></i> Django</li>
+                        <li><i class="fas fa-bolt"></i> FastAPI</li>
+                        <li><i class="fas fa-cogs"></i> Java EE</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3><i class="fas fa-tools"></i> Version Control & DevOps</h3>
+                    <ul>
+                        <li><i class="fab fa-git"></i> Git & GitHub</li>
+                        <li><i class="fab fa-docker"></i> Docker</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
         <!-- Projects Section -->
-        <section class="projects-section animate-slidein">
+        <section class="projects-section animate-slidein" id="projects">
             <h2><i class="fas fa-project-diagram"></i> Projects</h2>
             <div class="projects-list">
                 <div class="project-card">
+                    <h3>EGILS (Enterprise Grounded Intelligent Learning System)</h3>
+                    <span class="project-date">Complete by Sep 2026</span>
+                    <p>Enterprise-scale educational ecosystem for course workflows, finance, IP management, and access control.</p>
+                    <a href="#" class="project-link" id="open-egils-lightbox"><i class="fas fa-link"></i> View Details</a>
+                </div>
+                <div class="project-card">
+                    <h3>Manomyr : Depression Detection System</h3>
+                    <span class="project-date">Feb 2026</span>
+                    <p>Multimodal AI system using text, speech, and facial expression features to assess depression risk.</p>
+                    <a href="#" class="project-link" id="open-manomyr-lightbox"><i class="fas fa-link"></i> View Details</a>
+                </div>
+                <div class="project-card">
+                    <h3>Sar Myat Nhar : The Sarpay Sphere</h3>
+                    <span class="project-date">Sept 2025</span>
+                    <p>Android digital library app where readers browse books, earn coins, authors publish content, and admins oversee the platform.</p>
+                    <a href="https://github.com/VasudevAdhikari/SarMyatNhar-TheSarPaySphere" target="_blank" class="project-link"><i class="fas fa-link"></i> View Project</a>
+                </div>
+                <div class="project-card">
                     <h3>University Management System</h3>
-                    <span class="project-date">Ongoing (Complete by Sep 2025)</span>
-                    <p>Complete Web Based Academic System for a Semester-based University.</p>
-                    <a href="#" class="project-link" id="open-ums-lightbox"><i class="fas fa-link"></i> View Details</a>
+                    <span class="project-date">Aug 2025</span>
+                    <p>Completed web-based academic system; second prize winner at Product Show and Job Fair UCSY 2025.</p>
+                    <a href="https://github.com/VasudevAdhikari/ums" target="_blank" class="project-link"><i class="fas fa-link"></i> View Project</a>
                 </div>
                 <div class="project-card">
                     <h3>Own Chatbot using Django & Gemini API</h3>
@@ -132,15 +202,9 @@
             </div>
         </section>
         <!-- Work Experience Section -->
-        <section class="experience-section animate-fadein">
+        <section class="experience-section animate-fadein" id="experience">
             <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
             <div class="experience-list">
-                <div class="exp-card">
-                    <h3>Coordinator, CST Academy</h3>
-                    <span class="exp-date">May-June 2025</span>
-                    <p>Guiding, sharing, and teaching IT students as the coordinator of CST Academy.</p>
-                    <a href="#" class="exp-link"><i class="fas fa-link"></i> View Details</a>
-                </div>
                 <div class="exp-card">
                     <h3>Fundraiser for Sagaing Earthquake Recovery</h3>
                     <span class="exp-date">Apr 2025</span>
@@ -175,7 +239,7 @@
             </div>
         </section>
         <!-- MM Logic Gallery Section -->
-        <section id="mm-logic-gallery" class="mm-logic-gallery-section animate-pop">
+        <section id="gallery" class="mm-logic-gallery-section animate-pop">
             <h2><i class="fab fa-youtube"></i> MM Logic Gallery</h2>
             <div class="gallery-videos">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/tUs7By9xln4?si=a8AQJ0UMDJ09UA2k"
@@ -197,14 +261,14 @@
                     class="fab fa-youtube"></i> Visit MM Logic Gallery</a>
         </section>
         <!-- UCSY Documentary Video Section -->
-        <section id="ucsy-doc-video" class="ucsy-doc-section animate-fadein">
+        <section id="documentary" class="ucsy-doc-section animate-fadein">
             <h2><i class="fas fa-film"></i> UCSY Documentary Video</h2>
             <div class="doc-video-placeholder">
                 <iframe width="640" height="360" src="https://www.youtube.com/embed/yVaHA0G7YIs" title="University of Computer Studies Yangon: A Journey Through Departments and Extracurriculars" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </section>
         <!-- Education Section -->
-        <section class="education-section animate-slidein">
+        <section id="education" class="education-section animate-slidein">
             <h2><i class="fas fa-graduation-cap"></i> Education</h2>
             <ul class="education-list">
                 <li>
@@ -237,200 +301,89 @@
         </div>
     </div>
 
-    <!-- UMS Project Lightbox -->
-    <div id="ums-lightbox" class="lightbox-modal">
-        <span class="lightbox-close" id="ums-lightbox-close">×</span>
+    <div id="egils-lightbox" class="lightbox-modal">
+        <span class="lightbox-close" id="egils-lightbox-close">×</span>
         <div class="lightbox-content ums-content">
             <div class="ums-header">
-                <h2>University Management System (UMS)</h2>
+                <h2>EGILS (Enterprise Grounded Intelligent Learning System)</h2>
                 <div class="ums-status">
-                    <span class="status-badge">In Development</span>
-                    <span class="completion-date">📅 Expected: Sep 2025</span>
+                    <span class="status-badge">Confidential Project</span>
+                    <span class="completion-date">Complete by Sep 2026</span>
                 </div>
             </div>
-
             <div class="ums-overview">
-                <h3>What is UMS?</h3>
-                <p>UMS is a smart web app that helps universities run smoothly! It's like having a super assistant that takes care of all the complex and time-consuming tasks and makes everything easier for everyone.</p>
+                <h3>What is EGILS?</h3>
+                <p>EGILS is a multi-role, enterprise-scale educational ecosystem designed to manage the full lifecycle of academic and training operations within an organization. It integrates mentors, academic managers, financial administrators, executives, and system orchestrators into a unified platform with structured and auditable workflows.</p>
             </div>
-
             <div class="ums-features">
-                <h3>Who Can Use It?</h3>
-                <div class="user-roles">
-                    <div class="role-card">
-                        <div class="role-icon">👨‍💼</div>
-                        <h4>University Executives</h4>
-                        <p>Monitor and control almost everything, manage staff, and make important decisions</p>
-                    </div>
-                    <div class="role-card">
-                        <div class="role-icon">👩‍🏫</div>
-                        <h4>Teachers</h4>
-                        <p>Upload lessons, create tests, and communicate with students easily</p>
-                    </div>
-                    <div class="role-card">
-                        <div class="role-icon">👨‍🎓</div>
-                        <h4>Students</h4>
-                        <p>Access courses, submit homework, view results and stay connected</p>
-                    </div>
+                <h3>Platform Highlights</h3>
+                <div class="goals-list">
+                    <div class="goal-item"><span>Course creation, approval, enrollment, and evaluation workflows.</span></div>
+                    <div class="goal-item"><span>Wallet-based financial processing and royalty management.</span></div>
+                    <div class="goal-item"><span>Controlled access, permissions, and transactional audit trails.</span></div>
+                    <div class="goal-item"><span>Scalable modular architecture for education delivery and content governance.</span></div>
                 </div>
             </div>
-
             <div class="ums-tech">
                 <h3>Tech Stack</h3>
                 <div class="tech-grid">
-                    <span class="tech-item"><i class="fab fa-figma"></i> Figma</span>
-                    <span class="tech-item"><i class="fab fa-html5"></i> HTML & CSS</span>
-                    <span class="tech-item"><i class="fab fa-js-square"></i> JavaScript</span>
-                    <span class="tech-item"><i class="fab fa-python"></i> Python & Django</span>
-                    <span class="tech-item"><i class="fas fa-video"></i> Zegocloud API for Video Conferencing</span>
-                    <span class="tech-item"><i class="fas fa-database"></i> MySQL for Database</span>
-                    <span class="tech-item"><i class="fab fa-github"></i> GitHub</span>
-
+                    <span class="tech-item"><i class="fab fa-react"></i> Frontend: React, JavaScript</span>
+                    <span class="tech-item"><i class="fas fa-bolt"></i> Backend: FastAPI</span>
+                    <span class="tech-item"><i class="fas fa-database"></i> Database: PostgreSQL</span>
+                    <span class="tech-item"><i class="fab fa-docker"></i> Docker, Langchain, Langraph, MCP-style GenAI</span>
                 </div>
             </div>
-
-            <div class="ums-goals">
-                <h3>What Will It Do?</h3>
-                <div class="goals-list">
-                    <div class="goal-item">
-                        <span>Make complex and time-taking tasks automatic</span>
-                    </div>
-                    <div class="goal-item">
-                        <span>Help teachers manage classes better</span>
-                    </div>
-                    <div class="goal-item">
-                        <span>Give students easy access to everything</span>
-                    </div>
-                    <div class="goal-item">
-                        <span>Keep all information safe</span>
-                    </div>
-                </div>
-            </div>
-
             <div class="ums-confidential">
                 <div class="confidential-notice">
-                    <div class="confidential-icon">🔒</div>
+                    <div class="confidential-icon"><i class="fas fa-lock"></i></div>
                     <div class="confidential-text">
                         <h4>Confidential Project</h4>
-                        <p>Sorry, we can't share more details about this system due to confidentiality agreements.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="ums-timeline">
-                <h3>⏰ Project Timeline</h3>
-                <div class="timeline-info">
-                    <div class="timeline-item">
-                        <span class="timeline-icon">🚀</span>
-                        <span>Started: April 2025</span>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="timeline-icon">⏳</span>
-                        <span>Duration: 4 months</span>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="timeline-icon">🎉</span>
-                        <span>Expected Finish: September 2025</span>
+                        <p>Confidential Project that's why cannot share too much.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- CST Community Lightbox -->
-    <div id="cst-lightbox" class="lightbox-modal">
-        <span class="lightbox-close" id="cst-lightbox-close">×</span>
-        <div class="lightbox-content cst-content">
-            <div class="cst-header">
-                <h2>CST Community (UCSY)</h2>
-                <div class="cst-status">
-                    <span class="status-badge">Active Member</span>
-                    <span class="completion-date">📅 Jan 2025 - Present</span>
+    <div id="manomyr-lightbox" class="lightbox-modal">
+        <span class="lightbox-close" id="manomyr-lightbox-close">×</span>
+        <div class="lightbox-content ums-content">
+            <div class="ums-header">
+                <h2>Manomyr : Depression Detection System</h2>
+                <div class="ums-status">
+                    <span class="status-badge">Completed</span>
+                    <span class="completion-date">Feb 2026</span>
                 </div>
             </div>
-
-            <div class="cst-overview">
-                <h3>What is CST Community?</h3>
-                <p>CST Community is like a big family of tech students at University of Computer Studies Yangon (UCSY). It's a place where new students can get help, learn cool stuff, and make friends who love technology just like them!</p>
+            <div class="ums-overview">
+                <h3>What is the Depression Detection System?</h3>
+                <p>The Depression Detection System is a multimodal AI framework designed to identify indicators of depression by analyzing text, speech, and facial expressions. It fuses features across modalities and creates a unified prediction pipeline for more accurate mental health assessment.</p>
             </div>
-
-            <div class="cst-mission">
-                <h3>CST's Mission</h3>
-                <div class="mission-card">
-                    <div class="mission-text">
-                        <h4>Guide & Support</h4>
-                        <p>We help new students who feel lost and don't know where to start their tech journey</p>
-                    </div>
-                </div>
-                <div class="mission-card">
-                    <div class="mission-text">
-                        <h4>Collaborate</h4>
-                        <p>We bring together seniors and juniors so they can learn from each other</p>
-                    </div>
-                </div>
-                <div class="mission-card">
-                    <div class="mission-text">
-                        <h4>Share Knowledge</h4>
-                        <p>We create a space where everyone can share what they know and learn new things</p>
-                    </div>
+            <div class="ums-features">
+                <h3>Core Capabilities</h3>
+                <div class="goals-list">
+                    <div class="goal-item"><span>Natural Language Processing for linguistic pattern analysis.</span></div>
+                    <div class="goal-item"><span>Computer Vision for facial expression feature extraction.</span></div>
+                    <div class="goal-item"><span>LSTM-based deep learning for temporal and contextual understanding.</span></div>
+                    <div class="goal-item"><span>Multimodal fusion to deliver robust depression risk indicators.</span></div>
                 </div>
             </div>
-
-            <div class="cst-features">
-                <h3>✨ What We Do</h3>
-                <div class="feature-grid">
-                    <div class="feature-card">
-                        <h4>Get Help & Guidance</h4>
-                        <p>Smart seniors help with guidance and give advice about tech careers</p>
-                    </div>
-                    <div class="feature-card">
-                        <h4>Learn New Skills</h4>
-                        <p>Launch courses or boot camps to teach new tech skills</p>
-                    </div>
-                    <div class="feature-card">
-                        <h4>Tech Discussions</h4>
-                        <p>Share ideas, and talk about cool tech stuff with students</p>
-                    </div>
-                    <div class="feature-card">
-                        <h4>Work on Projects</h4>
-                        <p>Team up with other students to build awesome projects together</p>
-                    </div>
+            <div class="ums-tech">
+                <h3>Tech Stack</h3>
+                <div class="tech-grid">
+                    <span class="tech-item"><i class="fab fa-html5"></i> Frontend: HTML, CSS, JavaScript</span>
+                    <span class="tech-item"><i class="fas fa-bolt"></i> Backend: FastAPI</span>
+                    <span class="tech-item"><i class="fas fa-database"></i> Database: PostgreSQL</span>
+                    <span class="tech-item"><i class="fas fa-robot"></i> AI: BERT, RoBERTa, LSTM, CV, NLP, Polynomial Regression</span>
+                    <span class="tech-item"><i class="fas fa-cloud"></i> Hosted partly on Hugging Face Spaces</span>
                 </div>
             </div>
-
-            <div class="cst-join">
-                <h3>Why Join CST Community?</h3>
-                <div class="join-benefits">
-                    <div class="benefit-item">
-                        <div class="benefit-text">
-                            <h4>Learn Faster</h4>
-                            <p>Get help from experienced students who can speed up the learning journey</p>
-                        </div>
+            <div class="ums-confidential">
+                <div class="confidential-notice">
+                    <div class="confidential-icon"><i class="fas fa-lock"></i></div>
+                    <div class="confidential-text">
+                        <h4>Confidential Agreement</h4>
+                        <p>Due to confidentiality agreements, this project cannot be shared publicly.</p>
                     </div>
-                    <div class="benefit-item">
-                        <div class="benefit-text">
-                            <h4>Create Network</h4>
-                            <p>Meet awesome people who share your passion and enthusiasm</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cst-welcome">
-                <div class="welcome-notice">
-                    <div class="welcome-icon">🎊</div>
-                    <div class="welcome-text">
-                        <h4>Everyone is Welcome!</h4>
-                        <p>No matter if you're a beginner or already know some stuff, CST Community welcomes everyone! Come join us and let's learn and grow together.</p>
-                    </div>
-                </div>
-
-                <div class="cst-facebook-link">
-                    <a href="https://www.facebook.com/profile.php?id=61569832121725&mibextid=ZbWKwL" target="_blank" class="facebook-btn">
-                        <i class="fab fa-facebook-f"></i>
-                        <span>Visit CST Community Facebook Page</span>
-                        <i class="fas fa-external-link-alt"></i>
-                    </a>
                 </div>
             </div>
         </div>
@@ -444,7 +397,7 @@
                 <h2><i class="fab fa-java"></i> Basic to Advanced OOP with Java</h2>
                 <div class="java-status">
                     <span class="status-badge">Complete Course</span>
-                    <span class="completion-date">📅 Launched: Oct 2024</span>
+                    <span class="completion-date">Launched: Oct 2024</span>
                 </div>
             </div>
 
@@ -564,7 +517,7 @@
 
             <div class="java-achievement">
                 <div class="achievement-notice">
-                    <div class="achievement-icon">🎉</div>
+                    <div class="achievement-icon"></div>
                     <div class="achievement-text">
                         <h4>Course Success!</h4>
                         <p>This was a core Java course that helped many students learn programming from scratch and reach upper intermediate levels! Students loved the interactive quizzes and practical assignments! They got core foundation for Java programming and OOP.</p>
@@ -581,10 +534,7 @@
             <div class="earthquake-header">
                 <h2>Fundraiser for Sagaing Earthquake Recovery</h2>
                 <div class="earthquake-status">
-                    <span class="completion-date">📅 April 5, 2025</span>
-                </div>
-            </div>
-
+                            <span class="completion-date">April 5, 2025</span>
             <div class="earthquake-story">
                 <p>On May 28, 2025, a big earthquake hit Myanmar and hurt many people. Thinking about what I could do best, I decided to use my programming skills to raise money for the people who needed help.</p>
             </div>
@@ -600,11 +550,11 @@
             </div>
 
             <div class="earthquake-courses">
-                <h3>📚 The Two Courses I Taught</h3>
+<h3>The Two Courses I Taught</h3>
 
                 <div class="course-section">
                     <div class="course-header">
-                        <div class="course-icon">⚡</div>
+                        <div class="course-icon"></div>
                         <h4>C++ Basic to Intermediate Level</h4>
                     </div>
                     <div class="course-topics">

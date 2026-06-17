@@ -1,150 +1,111 @@
-# 👋 MYSELF, THE LIFELONG LEARNER
-&nbsp;
-&nbsp;
+﻿# Moe Thiha (Vasudev Adhikari) Portfolio
 
-Hello! I'm **Moe Thiha**, also known as **Vasudev Adhikari**. I'm a 19-year-old student from **Pyin Oo Lwin, Myanmar**, currently studying **Knowledge Engineering** at the **University of Computer Studies Yangon (UCSY)**.
-&nbsp;
-&nbsp;
-
-I love to learn, build, and share! My passion lies in learning, creating and teaching withing the tech field.
-&nbsp;
-&nbsp;
+Hello! I'm **Moe Thiha**, also known as **Vasudev Adhikari**. I study Knowledge Engineering at the University of Computer Studies Yangon (UCSY) and I build AI systems, software platforms, and educational projects.
 
 ---
-&nbsp;
-&nbsp;
 
-## My Skills
-&nbsp;
-&nbsp;
+## About Me
 
-### Tech Skills
-- **Web Development**: HTML, CSS, JavaScript (Intermediate level)
-- **Backend Development**: JavaEE (Intermediate level), Django(Advanced level)
-- **Databases**: SQL (Upper Intermediate Level)
-- **Coding Languages**: C++, Core Java (Upper Intermediate Level), Python (Advanced)
-- **Video Editing**: Greate at editing videos and creating content
-- **Learning New Things**: Right now, learning Artificial Intelligence (AI) with CS50
-&nbsp;
-&nbsp;
-
-### 🤝 Soft Skills
-- **Teaching**: I enjoy teaching and sharing others.
-- **Problem Solving**: I'm good at solving problems logically.
-- **Project Management**: I can manage projects and work with teams effectively.
-&nbsp;
-&nbsp;
-
-### 🗣️ Languages I Speak
-- **Burmese** (Fluent)
-- **English** (Fluent)
-- **Nepali** (Fluent)
-- **Hindi** (Fluent)
-&nbsp;
-&nbsp;
+- **Field:** Knowledge Engineering
+- **Interests:** Artificial Intelligence, software architecture, education systems, and full-stack development
+- **Location:** Yangon, Myanmar
+- **Email:** artsvasudev@gmail.com | moethiha@ucsy.edu.mm
+- **Phone:** +95 9989377380
 
 ---
-&nbsp;
-&nbsp;
 
-## 🚀 My Projects
-&nbsp;
-&nbsp;
+## Skills & Languages
 
-Take a look at some of the things I've built:
-- **University Management System** (Still building. Hope to finish by Sep 2025): A big system to help universities manage everything online.
-- **My Own Chatbot** (Made in Dec 2024): A smart chatbot using Django and Google's Gemini AI.
-- **Yogurt Shop Website** (Made in Sep 2024): An ecommerce-site with administrative management for a yogurt company.
-- **Shopping Mall Money Database** (Made in Mar 2024): A database system to keep track of a shopping mall's finances.
-&nbsp;
-&nbsp;
+### Technical Skills
+- Software architecture and system design
+- AI and machine learning
+- Database design and data modeling
+- Full-stack web development
 
----
-&nbsp;
-&nbsp;
+### Soft Skills
+- Technical project leadership
+- Team coordination
+- Problem solving
+- Knowledge sharing
+- Micromanagement
 
-## My Experiences
-&nbsp;
-&nbsp;
-
-- **Coordinator at CST Academy** (May 2025 - Now): Guide, teach and share knowledge with students.
-- **Earthquake Fundraiser** (Apr 2025): Launched courses (C++ and Python) to raise money for earthquake relief.
-- **Member of CST Community (UCSY)** (Jan 2025 - Now): Part of a group that supports IT students at my university (University of Computer Studies Yangon).
-- **Released a Java Course** (Oct 2024): Published a full course on OOP with Java.
-- **Founder of MM Logic Gallery (YouTube)** (Oct 2023 - Now): Create and share videos teaching programming and computer science. I do everything starting from making the content to editing to every other stuff.
-- **UCSY Documentary Video** (Aug 2023): Wrote, directed, and edited a documentary for my university.
-- **Volunteer Nepali Teacher** (Summer 2023): Spent two months teaching Nepali language and stories to about 50 students in a village school.
-&nbsp;
-&nbsp;
+### Languages
+- Burmese (Fluent)
+- English (Fluent)
+- Nepali (Fluent)
+- Hindi (Fluent)
 
 ---
-&nbsp;
-&nbsp;
 
-## Check out MM Logic Gallery!
-&nbsp;
-&nbsp;
+## Tools & Technology
 
-Want to learn coding? Visit my YouTube channel:
-&nbsp;
-&nbsp;
+### Programming
+- Python
+- JavaScript
+- Java
+- C++
+- Kotlin
 
-👉 [Visit MM Logic Gallery Here!](https://www.youtube.com/@mmlogicgallery)
-&nbsp;
-&nbsp;
+### AI / Data
+- Heuristic and statistical methods
+- Deep learning
+- Natural Language Processing (NLP)
+- Computer Vision (CV)
+- Multimodal learning
 
----
-&nbsp;
-&nbsp;
-
-## UCSY Documentary Video
-&nbsp;
-&nbsp;
-
-Here's the documentary I worked on for my university:
-&nbsp;
-&nbsp;
-
-👉 [Watch the UCSY Documentary Video Here!](https://youtu.be/yVaHA0G7YIs)
-&nbsp;
-&nbsp;
+### Backend & DevOps
+- Django
+- FastAPI
+- Java EE
+- Git / GitHub
+- Docker
 
 ---
-&nbsp;
-&nbsp;
 
-## My Education
-&nbsp;
-&nbsp;
+## Projects
 
-- **Bachelor of Science (Knowledge Engineering)**, University of Computer Studies Yangon (UCSY) (2022 - Present)
-- **Matriculation Exam Pass**, Pyin Oo Lwin (2022)
-&nbsp;
-&nbsp;
-
----
-&nbsp;
-&nbsp;
-
-## 📫 Contact Me
-&nbsp;
-&nbsp;
-
-I'm happy to connect! Reach out to me through any of the following:
-&nbsp;
-&nbsp;
-
-- **Phone:** [+95 9989377380](tel:+959989377380)
-- **Email:** [artsvasudev@gmail.com](mailto:artsvasudev@gmail.com)
-- **Telegram:** [@moethihaAdk](https://t.me/moethihaAdk)
-- **GitHub:** [github.com/VasudevAdhikari](https://github.com/VasudevAdhikari)
-&nbsp;
-&nbsp;
+- **EGILS** (Enterprise Grounded Intelligent Learning System) — Enterprise-scale education platform, expected completion by Sep 2026.
+- **Manomyr** (Depression Detection System) — Multimodal AI system for depression detection using text, speech, and facial expression analysis.
+- **Sar Myat Nhar: The Sarpay Sphere** — Android digital library app for readers, authors, and admins.
+- **University Management System** — Web-based academic system; second prize winner at the UCSY Product Show and Job Fair 2025.
+- **Own Chatbot using Django & Gemini API** — Custom conversational AI built with Django.
+- **E-commerce Website for Panmyodaw Yogurt** — Full ecommerce website for a yogurt business.
+- **Shopping Mall Finances Database** — Database system for shopping mall financial management.
 
 ---
-&nbsp;
-&nbsp;
 
-Feel free to connect with me! Let's build something awesome together or just chat about tech and learning!
-&nbsp;
-&nbsp;
+## Experience
+
+- **Sagaing Earthquake Fundraiser** (Apr 2025) — Launched C++ and Python courses to raise funds for recovery.
+- **Java OOP Course** (Oct 2024) — Published a complete “Basic to Advanced OOP with Java” course.
+- **MM Logic Gallery (YouTube)** (Oct 2023 - Present) — Founder and content creator sharing programming and computer science lessons.
+- **UCSY Documentary Video** (Aug 2023) — Scriptwriter, director, and editor for a university documentary.
+- **Volunteer Nepali Teacher** (Summer 2023) — Taught Nepali language and literature to more than 50 students.
+
+---
+
+## Media
+
+- **MM Logic Gallery:** https://www.youtube.com/@mmlogicgallery
+- **UCSY Documentary Video:** https://youtu.be/yVaHA0G7YIs
+
+---
+
+## Education
+
+- **B.Sc. (Knowledge Engineering)** — University of Computer Studies Yangon (UCSY), 2022 - Present
+- **Matriculation Exam Pass** — Pyin Oo Lwin, 2022
+
+---
+
+## Contact
+
+- **Phone:** +95 9989377380
+- **Email:** artsvasudev@gmail.com
+- **Email:** moethiha@ucsy.edu.mm
+- **Telegram:** https://t.me/moethihaAdk
+- **GitHub:** https://github.com/VasudevAdhikari
+
+---
+
+Thanks for visiting! I'm always happy to connect and collaborate on software, AI, or education projects.
